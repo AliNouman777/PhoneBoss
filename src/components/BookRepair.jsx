@@ -4,11 +4,30 @@ import { FiCheckCircle } from 'react-icons/fi'
 import Container from './Container'
 import { fadeUp, stagger, vp } from '@/lib/motion'
 
+// ── TEST number: 923427745746  (change to 447876660020 for production) ──
+const WA_NUMBER = '923427745746'
+
 export default function BookRepair() {
   const [sent, setSent] = useState(false)
 
   function handleSubmit(e) {
     e.preventDefault()
+    const fd = new FormData(e.target)
+    const device = fd.get('device')
+    const issue  = fd.get('issue')
+    const name   = fd.get('name')
+    const phone  = fd.get('phone')
+
+    const msg = [
+      '👋 *New Repair Booking – PhoneBoss*',
+      '',
+      `📱 *Device:* ${device}`,
+      `🔧 *Issue:* ${issue}`,
+      `👤 *Name:* ${name}`,
+      `📞 *Phone:* ${phone}`,
+    ].join('\n')
+
+    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank')
     setSent(true)
     setTimeout(() => { setSent(false); e.target.reset() }, 5000)
   }
