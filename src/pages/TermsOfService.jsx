@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { FiArrowLeft } from 'react-icons/fi'
 import Container from '../components/Container'
 
@@ -8,10 +9,15 @@ export default function TermsOfService() {
 
   return (
     <div className="min-h-screen bg-bg text-txt">
+      <Helmet>
+        <title>Terms of Service – PhoneBoss</title>
+        <meta name="description" content="PhoneBoss terms of service. Read our repair warranty, no fix no fee policy, payment terms and customer rights before using our services." />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
 
       {/* Top bar */}
       <div className="bg-surface border-b border-bdr sticky top-0 z-50">
-        <Container className="flex items-center gap-4 h-[68px]">
+        <Container className="flex items-center gap-4 h-17">
           <Link to="/" className="flex items-center gap-2 text-txt-sub hover:text-primary transition-colors text-sm font-medium">
             <FiArrowLeft size={16} /> Back to Home
           </Link>

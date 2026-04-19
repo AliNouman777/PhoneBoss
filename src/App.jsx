@@ -13,10 +13,12 @@ import Stores from './components/Stores'
 import Footer from './components/Footer'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
+import SEO from './components/SEO'
 
 function HomePage({ dark, setDark }) {
   return (
     <div className="min-h-screen bg-bg text-txt transition-colors duration-300">
+      <SEO />
       <Header dark={dark} setDark={setDark} />
       <main>
         <Hero />
