@@ -24,10 +24,10 @@ const company = [
 ]
 
 const socials = [
-  { icon: <FaInstagram size={16} />, label: 'Instagram' },
-  { icon: <FaFacebook  size={16} />, label: 'Facebook'  },
-  { icon: <FaTiktok    size={16} />, label: 'TikTok'    },
-  { icon: <FaWhatsapp  size={16} />, label: 'WhatsApp'  },
+  { icon: <FaInstagram size={16} />, label: 'Instagram', href: 'https://www.instagram.com/phoneboss_tv/' },
+  { icon: <FaFacebook  size={16} />, label: 'Facebook',  href: '#' },
+  { icon: <FaTiktok    size={16} />, label: 'TikTok',    href: '#' },
+  { icon: <FaWhatsapp  size={16} />, label: 'WhatsApp',  href: 'https://wa.me/447876660020' },
 ]
 
 const contacts = [
@@ -65,7 +65,8 @@ export default function Footer() {
               <div className="flex gap-2">
                 {socials.map(s => (
                   <motion.a
-                    key={s.label} href="#" aria-label={s.label}
+                    key={s.label} href={s.href} aria-label={s.label}
+                    target="_blank" rel="noopener noreferrer"
                     whileHover={{ y: -3, scale: 1.1 }}
                     transition={{ type: 'spring', stiffness: 300, damping: 18 }}
                     className="w-9 h-9 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-colors"
