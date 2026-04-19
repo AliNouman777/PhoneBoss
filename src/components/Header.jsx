@@ -58,8 +58,8 @@ export default function Header({ dark, setDark }) {
               e.target.nextSibling.style.display = 'flex'
             }}
           />
-          <span className="hidden text-2xl font-black tracking-tight">
-            <span className="text-primary">PHONE</span> &nbsp;
+          <span className="text-2xl font-black tracking-tight">
+            <span className="text-primary">PHONE</span>
             <span className="text-txt">BOSS</span>
           </span>
         </a>
