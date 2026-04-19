@@ -52,14 +52,14 @@ export default function Header({ dark, setDark }) {
           <img
             src="/logo.png"
             alt="PhoneBoss"
-            className="h-12 w-auto object-contain"
+            className="h-14 w-auto object-contain block max-[300px]:hidden"
             onError={e => {
               e.target.style.display = 'none'
               e.target.nextSibling.style.display = 'flex'
             }}
           />
-          <span className="text-2xl font-black tracking-tight">
-            <span className="text-primary">PHONE</span>
+          <span className="text-2xl font-black tracking-tight absolute left-15 sm:left-17 lg:left-20">
+            <span className="text-primary">PHONE</span>  &nbsp;
             <span className="text-txt">BOSS</span>
           </span>
         </a>
