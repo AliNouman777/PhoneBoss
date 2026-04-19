@@ -4,8 +4,7 @@ import { FiCheckCircle } from 'react-icons/fi'
 import Container from './Container'
 import { fadeUp, stagger, vp } from '@/lib/motion'
 
-// ── TEST number: 923427745746  (change to 447876660020 for production) ──
-const WA_NUMBER = '923427745746'
+const WA_NUMBER = '447876660020'
 
 export default function BookRepair() {
   const [sent, setSent] = useState(false)
