@@ -4,12 +4,12 @@ import Container from './Container'
 import { fadeUp, scaleIn, stagger, vp } from '@/lib/motion'
 
 const services = [
-  { icon: <MdOutlinePhoneIphone size={26} />,      title: 'Screen Repair',       desc: 'Cracked or unresponsive displays replaced with premium quality parts.',        price: 'From £49' },
-  { icon: <MdOutlineBatteryChargingFull size={26}/>,title: 'Battery Replacement', desc: 'Restore your phone\'s battery life with a certified OEM-grade battery.',       price: 'From £29' },
-  { icon: <MdOutlineWaterDrop size={26} />,         title: 'Water Damage',        desc: 'Full diagnostic and deep clean for water-damaged devices.',                    price: 'From £39' },
-  { icon: <MdOutlineCameraAlt size={26} />,         title: 'Camera Repair',       desc: 'Blurry or broken camera? We\'ll have you shooting sharp photos again.',        price: 'From £35' },
-  { icon: <MdOutlineElectricalServices size={26} />,title: 'Charging Port',       desc: 'Loose or dead charging port replaced quickly and reliably.',                   price: 'From £25' },
-  { icon: <MdOutlineStorage size={26} />,           title: 'Data Recovery',       desc: 'We recover your precious photos, contacts and data safely.',                   price: 'From £49' },
+  { icon: <MdOutlinePhoneIphone size={26} />,       title: 'Screen Repair',       desc: 'Cracked or unresponsive displays replaced with premium quality parts.',     price: 'From £29.99' },
+  { icon: <MdOutlineBatteryChargingFull size={26}/>, title: 'Battery Replacement', desc: 'Restore your phone\'s battery life with a certified OEM-grade battery.',    price: 'From £19.99' },
+  { icon: <MdOutlineWaterDrop size={26} />,          title: 'Water Damage',        desc: 'Full diagnostic and deep clean for water-damaged devices.',                 price: 'From £19.99' },
+  { icon: <MdOutlineCameraAlt size={26} />,          title: 'Camera Repair',       desc: 'Blurry or broken camera? We\'ll have you shooting sharp photos again.',     price: 'From £24.99' },
+  { icon: <MdOutlineElectricalServices size={26} />, title: 'Charging Port',       desc: 'Loose or dead charging port replaced quickly and reliably.',                price: 'From £19.99' },
+  { icon: <MdOutlineStorage size={26} />,            title: 'Data Recovery',       desc: 'We recover your precious photos, contacts and data safely.',                price: 'From £19.99' },
 ]
 
 export default function Services() {

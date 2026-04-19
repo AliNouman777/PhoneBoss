@@ -14,8 +14,8 @@ const socials  = [
   { icon: <FaWhatsapp size={16} />,  label: 'WhatsApp'  },
 ]
 const contacts = [
-  { icon: <FiPhone size={14} />,   label: '+44 123 456 7890',      href: 'tel:+441234567890'              },
-  { icon: <FiMail size={14} />,    label: 'hello@phoneboss.co.uk', href: 'mailto:hello@phoneboss.co.uk'  },
+  { icon: <FiPhone size={14} />,   label: '07876 660020',          href: 'tel:+447876660020'              },
+  { icon: <FiMail size={14} />,    label: 'mr.shad@live.co.uk',   href: 'mailto:mr.shad@live.co.uk'     },
   { icon: <FiMapPin size={14} />,  label: 'Find Our Store',        href: '#stores'                        },
   { icon: <FaWhatsapp size={14} />,label: 'WhatsApp Us',           href: '#'                              },
 ]

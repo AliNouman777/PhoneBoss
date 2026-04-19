@@ -80,7 +80,7 @@ export default function Hero() {
                 Start Repair
               </motion.a>
               <motion.a
-                href="#services"
+                href="#stores"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 className="px-7 py-3.5 border-2 border-txt text-txt font-black uppercase text-sm tracking-widest hover:bg-txt hover:text-bg transition-colors"
