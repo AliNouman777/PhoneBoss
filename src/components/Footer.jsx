@@ -40,10 +40,11 @@ export default function Footer() {
 
             {/* Brand */}
             <motion.div variants={fadeUp}>
-              <div className="text-3xl font-black mb-1">
-                <span className="text-primary">PHONE</span>
-                <span className="text-white">BOSS</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="PhoneBoss"
+                className="h-10 w-auto object-contain mb-1 brightness-0 invert"
+              />
               <p className="text-gold text-[10px] font-bold uppercase tracking-[0.12em] mb-4">You Break, We Fix</p>
               <p className="text-sm leading-relaxed mb-6">Expert phone repairs done fast, done right. Your trusted local repair specialists.</p>
               <div className="flex gap-2">
