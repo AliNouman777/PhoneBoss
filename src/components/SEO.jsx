@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-const SITE_URL = 'https://phoneboss.vercel.app'
+const SITE_URL = 'https://www.phoneboss.online'
 const DEFAULT_IMG = `${SITE_URL}/logo.png`
 
 export default function SEO({
