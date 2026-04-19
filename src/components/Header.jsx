@@ -52,7 +52,7 @@ export default function Header({ dark, setDark }) {
           <img
             src="/logo.png"
             alt="PhoneBoss"
-            className="h-10 w-auto object-contain"
+            className="h-12 w-auto object-contain"
             onError={e => {
               e.target.style.display = 'none'
               e.target.nextSibling.style.display = 'flex'
