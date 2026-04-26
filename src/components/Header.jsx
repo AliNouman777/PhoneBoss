@@ -45,22 +45,17 @@ export default function Header({ dark, setDark }) {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
-                      grid grid-cols-[auto_1fr_auto] items-center h-[68px] gap-6">
+                      grid grid-cols-[auto_1fr_auto] items-center h-17 gap-6">
 
         {/* ── Logo ── */}
         <a href="#home" className="flex items-center gap-2 shrink-0">
           <img
             src="/logo.png"
             alt="PhoneBoss"
-            className="h-14 w-auto object-contain block max-[300px]:hidden"
-            onError={e => {
-              e.target.style.display = 'none'
-              e.target.nextSibling.style.display = 'flex'
-            }}
+            className="h-10 w-auto object-contain"
           />
-          <span className="text-2xl font-black tracking-tight absolute left-15 sm:left-17 lg:left-20">
-            <span className="text-primary">PHONE</span>  &nbsp;
-            <span className="text-txt">BOSS</span>
+          <span className="text-2xl font-black tracking-tight leading-none">
+            <span className="text-primary">PHONE</span><span className="text-txt">BOSS</span>
           </span>
         </a>
 
